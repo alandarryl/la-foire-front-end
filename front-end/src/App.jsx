@@ -7,6 +7,7 @@ import './App.css'
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Banner from './components/banner/Banner';
+import ArticleList from './components/articleList/ArticleList';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <div>
         <Navbar />
         <Banner />
+        <ArticleList />
         <h1>La foire</h1>
         <Footer />
       </div>

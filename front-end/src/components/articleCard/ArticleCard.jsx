@@ -1,5 +1,5 @@
 
-
+import "./articleCard.css";
 
 function ArticleCard({cardImage, cardTitle, cardDescription, authorImage, authorName, datePost}){
 
