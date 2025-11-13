@@ -1,10 +1,10 @@
-
-
 footer{
     width:100%;
     display: block;
     background-color: #222;
     color: #fff;
+    margin-top: auto;
+    text-align: center;
 }
 
 footer .footer-links{

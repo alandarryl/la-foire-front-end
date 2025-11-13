@@ -11,6 +11,11 @@ nav{
     padding: 45px 25px;
 }
 
+nav h1{
+    font-size: 24px;
+    flex: 1;
+}
+
 nav .nav-links{
     display: flex;
     list-style: none;
@@ -51,7 +56,8 @@ nav .log-connect .login, nav .log-connect .signup{
 nav .nav-items{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex: 3;
 }
 
 
@@ -99,7 +105,8 @@ nav .menu-switch{
         width: 100%;
     }
 
-    nav .nav-items.active {
+    .nav-items.active {
+        text-align: center;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -109,6 +116,7 @@ nav .menu-switch{
         background-color: #333;
         padding: 20px 0;
         width: 100%;
+        z-index: 20;
     }
 }
 
