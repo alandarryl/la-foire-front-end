@@ -1,15 +1,14 @@
 
-
-
 .article-card {
-    border: 1px solid #ccc;
+    flex: 1;
+    /* border: 1px solid #ccc; */
     border-radius: 8px;
-    padding: 16px;
+    /* padding: 16px; */
     margin: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
-    width: 500px;
-    height: 450px;
+    /* min-width: 450px;
+    max-width: 450px; */
+    height: 520px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -18,53 +17,114 @@
 
 .article-card:hover{
     transform: translateY(-5px);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .article-card .card-image{
     width: 100%;
     height: 70%;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 30px;
 }
 
 .article-card .card-content{
     display: flex;
+    height: 30%;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.article-card .card-title{
+.article-card .text-content h2{
     font-size: 1.5rem;
-    margin-bottom: 8px;
-    /* text-align: center; */
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 
-.article-card .card-description{
+.article-card .text-content p{
     font-size: 1rem;
+    margin-bottom: 25px;
     color: #555;
-    /* text-align: center; */
 }
 
 .article-card .card-content .user-data{
-    margin-top: auto;
     font-size: 0.9rem;
     color: #888;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* gap: 10px; */
+    gap: 8px;
 }
 
-.card-content .user-data img{
+.card-content .user-data .author-image{
     width: 30px;
     height: 30px;
     border-radius: 50%;
     margin-right: 8px;
 }
 
+@media (max-width: 768px){
+    .article-card {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .article-card .card-image{
+        height: auto;
+    }
+}
+
+@media (max-width: 600px){
+    .article-card .text-content h2{
+        font-size: 1.3rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .article-card .text-content p{
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+
+    .article-card .card-content .user-data{
+        font-size: 0.85rem;
+    }
+}
 
 
+@media (max-width: 480px){
+    .article-card .text-content h2{
+        font-size: 1.2rem;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
 
+    .article-card .text-content p{
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .article-card .card-content .user-data{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 360px){
+    .article-card .text-content h2{
+        font-size: 1.1rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .article-card .text-content p{
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+
+    .article-card .card-content .user-data{
+        font-size: 0.75rem;
+    }
+}
 
 
 

@@ -2,14 +2,14 @@
 import ArticleCard from "../articleCard/ArticleCard";
 
 
-
+import "./articleList.css"
 
 function ArticleList(){
 
     return(
         <div className="article-container" >
             <h2>Article List</h2>
-            <div className="article-list" >
+            <div className="article-grid" >
                 <ArticleCard 
                     cardImage={"https://picsum.photos/600/400?random=3"} 
                     cardTitle={"Sample Article 1"}
