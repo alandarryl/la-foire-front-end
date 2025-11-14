@@ -3,6 +3,8 @@ import { useState } from "react";
 
 import "./navbar.css";
 
+import logo from "../../assets/lafoire-logo.png";
+
 function Navbar(){
 
     const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +13,7 @@ function Navbar(){
 
     return(
         <nav className="navbar" >
-            <h1> <span>: )</span> La foire</h1>
+            <h1> <img src={logo} /> La foire</h1>
             <div  className={`nav-items ${isOpen ? "active" : "" }`} >
                 <ul className="nav-links" >
                     <li><a href="#" >Home</a></li>
